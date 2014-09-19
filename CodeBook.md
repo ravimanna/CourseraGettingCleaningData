@@ -11,10 +11,10 @@ The purpose of this project is to,
 file <- file.path(getwd(), "FUCIDataset.zip")
 
 if (!file.exists(file)) {        
-        download.file('https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip',
-                      destfile='FUCIDataset.zip', 
-                      mode="wb")
-        unzip('FUCIDataset.zip')
+    download.file('https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip',
+                  destfile='FUCIDataset.zip', 
+                  mode="wb")
+    unzip('FUCIDataset.zip')
 }
 ```
 #####Get activities and features (only mean & standard deviation) names
