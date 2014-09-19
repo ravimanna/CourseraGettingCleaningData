@@ -15,7 +15,8 @@ activityLabels <- read.table("UCI HAR Dataset/activity_labels.txt")[,2]
 
 # Get features
 features <- read.table("UCI HAR Dataset/features.txt")[,2]
-meanstdFeatures <- grepl(".*Mean.*|.*Std.*", features)
+#meanstdFeatures <- grepl(".*Mean().*|.*Std().*", features)
+meanstdFeatures <- grep("mean\\(|std\\(", features)
 
 ##################### Training Data ###############################
 # Load data
